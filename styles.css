@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+display: none; /* Hidden by default */
+background-color: #333;
+position: absolute;
+top: 60px;
+left: 0;
+width: 100%;
+padding: 10px 0;
+text-align: center;
+}
+
+.navbar a {
+display: block;
+padding: 10px;
+color: white;
+text-decoration: none;
+}
+
+.navbar a:hover {
+background-color: #555;
+}
+
+/* Hamburger Button */
+.menu-btn {
+background: none;
+border: none;
+cursor: pointer;
+padding: 10px;
+position: relative;
+top: 10px;
+left: 10px;
+}
+
+.menu-btn div {
+width: 30px;
+height: 4px;
+background-color: black;
+margin: 6px 0;
+transition: 0.4s;
+}
+
+/* When the menu is active, change the button style */
+.menu-btn.active div:nth-child(1) {
+transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.menu-btn.active div:nth-child(2) {
+opacity: 0;
+}
+
+.menu-btn.active div:nth-child(3) {
+transform: rotate(45deg) translate(-5px, -6px);
+}
